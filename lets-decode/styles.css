@@ -1,10 +1,31 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
 }
-
-
+.dropdown{
+    position: relative;
+    cursor: pointer;
+}
+.dropdown-menu{
+    position: absolute;
+    background-color: white;
+    color: black;
+    display: none;
+    flex-direction: column;
+    
+    width: 100%;
+}
+.dropdown-menu a{
+    text-decoration: none;
+    font-size: 15px;
+    padding-top: 5px;
+    
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -14,13 +35,15 @@ header{
     display: flex;
     margin-top: 10px;
     padding-right: 10px;
-    gap: 100px;
+    padding-left: 5px;
+    gap: 40px;
 color: white;
     font-size: 30px;
     border-radius: 100px;
    background-color: black;
    margin-bottom: 20px;
 }
+
 .header2{
     display: flex;
     gap: 10px;
@@ -34,6 +57,7 @@ color: white;
     color: white;
     border: none;
     font-size: 20px;
+    padding: 10px;
     
 }
 .container{
@@ -57,7 +81,7 @@ color: white;
     
 }
 #quotes{
-    font-size: 70px;
+    font-size: 60px;
 }
 .card img{
     border-radius: 100px 100px  0 0;
@@ -121,7 +145,7 @@ color: white;
 .container3{
     display: flex;
     background-color: blue;
-    color:red;
+    color:white;
     padding-left: 550px;
     padding-top: 20px;
     text-align: center;
@@ -164,11 +188,15 @@ color: white;
     gap: 90px;
 }
 .left3{
-    flex-direction: row;
+   display: flex;
+   flex-direction: column;
+   gap: 0;
+   padding-bottom: 20px;
+   padding-left: 200px;
 }
 .left3 img{
- border-radius: 150px;
- margin-bottom: 10px;
+ border-radius: 100px 0;
+
 
 }
 .right3{
@@ -187,6 +215,7 @@ color: white;
     padding-left: 150px;
     padding-top: 50px;
     gap: 20px;
+    
 }
 .container6 img{
    
@@ -202,6 +231,7 @@ color: white;
 .container8{
     background-color: pink;
     height: 400px;
+    padding-top: 100px;
 }
 .team-card{
     display: flex;
@@ -302,4 +332,173 @@ color: white;
   display: flex;
     flex-direction: column;
     gap: 75px;
+    
+    
 }
+
+/* loader ke liye css */
+.header3{
+    padding-top: 20px;
+    
+}
+.header3 input{
+    border-radius: 20px;
+}
+#search{
+ padding: 10px 20px;
+ 
+
+}
+
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-option {
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CONTAINER 1 */
+  .container {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  
+
+ .left3{
+    padding-left: 20px;
+    
+ }
+  .right img {
+    height: auto;
+    width: 100%;
+  }
+
+  #quotes {
+    font-size: 35px;
+  }
+
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CONTAINER 2 */
+  .container2 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .right1 {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .card-section1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* CONTAINER 3 */
+  .container3 {
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+.left1 img{
+    width: 100%;
+}
+  /* CONTAINER 4 */
+  .leftright {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+  }
+
+  /* CONTAINER 5 */
+  .container5 {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* CONTAINER 6 */
+  .container6 {
+    flex-direction: column;
+    padding-left: 20px;
+    align-items: center;
+  }
+
+  /* TEAM SECTION */
+  .team-card {
+    flex-direction: column;
+    padding-left: 20px;
+    align-items: center;
+  }
+
+  .leftright4 {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+
+  }
+  /* CONTAINER 9 */
+  .leftright5 {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer-card {
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 30px;
+    text-align: center;
+  }
+  .right2 iframe{
+    width: 100%;
+    height: 200px;
+  }
+  .container8{
+    flex-direction: column;
+    height:480px;
+    padding-top: 5px;
+  }
+  .internal-leftright4{
+    padding-left: 50px;
+   
+  }
+
+#search{
+ padding: 10px;
+}
+
+
+
+}
+
+

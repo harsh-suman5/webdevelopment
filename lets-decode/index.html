@@ -3,41 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>plumbing services</title>
+  <title>Lets Code</title>
   <link rel="stylesheet" href="styles.css">
-  
-  
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
 </head>
-<body>
+<body >
+
+
     <header>
     
     
     <div>
-      <h1>⚡Manteni</h1>
+      <h1 style="font-size: 20px; padding-top: 15px;">⚡Harsh academy live</h1>
     </div>
     <div class="header-option" >
      <span>Home</span>
      <span>About</span>
-     <span>services</span>
+      <span class="dropdown">
+      Services ▾
+      <div class="dropdown-menu">
+        <a href="design.html" >UI/UX</a>
+        <a href="analysis.html">Data Analysis</a>
+        <a href="maintainace.html">Website Maintenance</a>
+        <a href="repair.html">Repair</a>
+      </div>
+    </span>
       <span>blog</span>
     </div>
+    <div class="header3"><input type="text" id="search" placeholder="Search here...">
+  </div>
     <div class="header2" >
-      <span>📞+917856934617</span>
+      <span style="padding-top: 10px;">📞+917856934617</span>
       <span><button><a href="tel:+917856934617" style="text-decoration: none; color: white;">Contact Us</a></button></span>
     </div>
   </header>
 
   <div class="container">
     <div class="left">
-     <h6 id="red" > We Repair What Your Husband Fixed </h6><br>
-      <h1 id="quotes">Best PLACE To <br> Take Your Leak</h1>
+     <h6 id="red" > We Clean the Code Your Intern Touched </h6><br>
+      <h1 id="quotes">Best PLACE To <br> Build Better Code</h1>
+
       <div class="card-section">
       <div class="card">
         <img src="data:image/jpeg;base64,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" alt="">
         
       </div>
       <div class="card" id="text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam tempora dolores eum, modi harum dolorum!
+        Welcome to the platform of Harsh Academy Live.
+        We will provide best tech services.
       </div>
       </div>
       
@@ -55,7 +70,7 @@
   </div>
   <div class="right1">
     About Us
-    <h1>Connecting to customers <br> by More Than Just Pipes</h1>
+    <h1>Connecting to customers <br> by More Than Just codes</h1>
     <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis officia dignissimos debitis qui recusandae magni sapiente molestiae. Quos, voluptas beatae doloribus molestias eaque amet ut pariatur vitae officia nobis autem.</h4>
     <div class="card-section1">
       <div class="card1">
@@ -89,14 +104,14 @@
 </div>
 <div class="container4">
     <h5>Video Popup</h5>
-    <h1>It Has Never Been Easier To <br> Plumbing Service</h1>
+    <h1>It Has Never Been Easier To <br> Create Reliable Code</h1>
    <div class="leftright">
      <div class="left2">
       <h2>🪪 Create Free Account</h2>
       <h2>💔 Hire Our Pro Plumber</h2>
      </div>
     <div class="right2">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mMjPIhFFz2c?si=g3akkxeITYie2c8O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dV61c4CYzCg?si=PsBDJDAhZHDVaX2n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
    </div>
   
@@ -137,20 +152,8 @@
   <div class="leftright4">
     <div class="left4">
 
-      <h1>Connecting to the customers <br> by more than just pipes</h1>
-      <div class="internal-leftright4">
-        <div class="left0">
-          🔴 <br>
-          Repairs & Installation
-          
-          <h5>🔴 <br>Drain & Sewer Cleaning</h5>
-        </div>
-        <div class="right0">
-          🔴 <br>
-          Water Filter Cleaning 
-          <h5>🔴 <br>Root infected pipes</h5>
-        </div>
-      </div>
+      <h1>Connecting to the customers <br> by more than production</h1>
+      
     </div>
     <div class="right4">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW1xVs0ZXIIj3WR2jHaomuNISah-WUuzGEig&s" alt="" id="img1">
@@ -172,6 +175,7 @@
     </div>
   </div>
 </div>
+
 <footer>
 <div class="container10">
   <div class="footer-card">
@@ -194,10 +198,14 @@
   </div>
   </div>
   <div class="card5">
-   ⚡Manteni
+   © 2026 Harsh Academy Live | All rights reseved
   </div>
 </div>
 </footer>
-  
+
+
+
+
+
 </body>
 </html>
