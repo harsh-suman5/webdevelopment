@@ -1,0 +1,39 @@
+.login{
+    margin: 250px;
+    text-align: center;
+   
+  
+    color: yellow;
+    border-radius: 600px;
+   padding-bottom: 500px;
+    
+}
+
+form{
+    color:red;
+    font-size: 25px;
+
+    
+    
+}
+form a{
+    text-decoration: none;
+}
+form input,form button{
+    border-radius: 30px;
+    font-size: 20px;
+}
+body{
+    background-color: blue;
+ 
+}
+.container8{
+    display: flex;
+    
+}
+.card7{
+    margin-left: 20px;
+}
+html,body{
+    overflow-y: hidden;
+}
